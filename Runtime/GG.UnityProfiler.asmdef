@@ -1,0 +1,17 @@
+{
+    "name": "GG.UnityProfiler",
+    "rootNamespace": "GGUnityProfiler",
+    "references": [
+        "GUID:73d3319e80ff4486db520155ff10d390",
+        "GUID:30245629345af4b25ae91b7c33dfe3f4"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
