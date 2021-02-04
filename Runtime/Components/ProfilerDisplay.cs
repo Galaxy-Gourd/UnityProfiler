@@ -5,17 +5,17 @@ namespace GGUnityProfiler
 {
     public class ProfilerDisplay : MonoBehaviour
     {
-        private ProfilerGroup _group;
-        public void SetGroup(ProfilerGroup group)
+        private ProfilerData _data;
+        public void SetGroup(ProfilerData data)
         {
-            _group = group;
+            _data = data;
         }
 
         private void Update()
         {
-            if (_group != null)
+            if (_data != null)
             {
-                Debug.Log(_group.GetCumulativeMS());
+                Debug.Log(_data.GetCumulativeMS());
             }
         }
     }

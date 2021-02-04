@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace GGUnityProfiler
 {
-    public class ProfilerSystem : UnityCoreSystemBase<ProfilerGroup>
+    public class ProfilerSystem : UnityCoreSystemBase<ProfilerData>
     {
         #region Variables
         
@@ -29,10 +29,10 @@ namespace GGUnityProfiler
 
         public void Update()
         {
-            // foreach (IUnitySystemComponent component in Components)
-            // {
-            //     Debug.Log(((ProfilerGroup)component).GetCumulativeMS() / 1000);
-            // }
+            foreach (ProfilerData component in _components)
+            {
+                
+            }
         }
 
         #endregion Display

@@ -1,4 +1,7 @@
-namespace GGUnityProfiler.Data
+using GGSharpTelemetry;
+using GGUnityTick;
+
+namespace GGUnityProfiler
 {
     public static class RootProfiler
     {
@@ -6,6 +9,13 @@ namespace GGUnityProfiler.Data
 
         public static ProfilerSystem Profiler;
 
-        #endregion Variables 
+        private static TelemetryTick _telemetryTick;
+
+        #endregion Variables
+
+        public static void OnTickSystemReady()
+        {
+            _telemetryTick = new TelemetryTick(RootTick.Tick);
+        }
     }
 }

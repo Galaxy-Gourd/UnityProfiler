@@ -4,7 +4,7 @@ using GGUnityProfiler.Data;
 
 namespace GGUnityProfiler
 {
-    public class ProfilerGroup : IUnitySystemComponent
+    public class ProfilerData : IUnitySystemComponent
     {
         #region Variables
 
@@ -15,7 +15,7 @@ namespace GGUnityProfiler
 
         #region Construction
 
-        public ProfilerGroup()
+        public ProfilerData()
         {
             RootProfiler.Profiler?.AddComponent(this);
         }
